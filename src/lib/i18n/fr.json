@@ -1,0 +1,75 @@
+{
+  "portal": {
+    "welcome": "Bienvenue sur le portail fournisseurs",
+    "description": "Veuillez compléter les étapes suivantes pour vous inscrire chez nous.",
+    "invalidToken": "Lien d'invitation invalide ou expiré. Veuillez contacter le support.",
+    "resendInvite": "Renvoyer l'invitation",
+    "steps": {
+      "companyContacts": "Entreprise et Contacts",
+      "sitesRoles": "Sites et Rôles",
+      "qualityCompliance": "Qualité et Conformité",
+      "productsIngredients": "Produits et Ingrédients",
+      "documentsUpload": "Téléchargement de Documents",
+      "legalEthics": "Légal et Éthique",
+      "reviewSubmit": "Révision et Soumission"
+    },
+    "buttons": {
+      "next": "Suivant",
+      "previous": "Précédent",
+      "saveDraft": "Enregistrer le brouillon",
+      "submit": "Soumettre la candidature",
+      "upload": "Télécharger le fichier",
+      "download": "Télécharger"
+    },
+    "companyInfo": {
+      "title": "Informations sur l'entreprise",
+      "legalName": "Raison Sociale",
+      "dba": "Nom Commercial (DBA)",
+      "type": "Type de Fournisseur",
+      "country": "Pays",
+      "contactPerson": "Personne Contact",
+      "contactRole": "Rôle",
+      "contactEmail": "E-mail",
+      "contactPhone": "Téléphone"
+    },
+    "siteInfo": {
+      "title": "Sites d'Opération",
+      "addSite": "Ajouter un site",
+      "address": "Adresse",
+      "city": "Ville",
+      "region": "Région/État",
+      "gmpStatus": "Statut BPF",
+      "lastAuditDate": "Date du Dernier Audit"
+    },
+    "documentUpload": {
+      "title": "Documents Requis",
+      "description": "Veuillez télécharger tous les documents nécessaires. Taille maximale du fichier : 20 Mo.",
+      "issuedOn": "Date d'émission",
+      "expiresOn": "Date d'expiration",
+      "status": "Statut",
+      "version": "Version",
+      "uploadedBy": "Téléchargé par",
+      "uploadedAt": "Téléchargé le",
+      "selectFile": "Sélectionner un fichier",
+      "dragDrop": "Glissez-déposez les fichiers ici ou cliquez pour parcourir",
+      "fileType": "Type de fichier",
+      "fileName": "Nom du fichier",
+      "fileSize": "Taille du fichier"
+    },
+    "legalEthics": {
+      "title": "Conformité Légale et Éthique",
+      "codeOfConduct": "J'accepte le Code de Conduite des Fournisseurs.",
+      "antiBribery": "Je confirme la conformité aux politiques anti-corruption.",
+      "dataProtection": "J'accepte l'Accord de Protection des Données."
+    },
+    "reviewSubmit": {
+      "title": "Révision et Soumission",
+      "confirmation": "Veuillez examiner attentivement toutes les informations avant de soumettre.",
+      "declaration": "Je déclare que toutes les informations fournies sont véridiques et exactes."
+    },
+    "success": "Votre candidature a été soumise avec succès !",
+    "error": "Une erreur est survenue lors de la soumission. Veuillez réessayer.",
+    "loading": "Chargement...",
+    "languageToggle": "Langue"
+  }
+}

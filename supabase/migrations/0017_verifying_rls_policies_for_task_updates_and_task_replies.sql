@@ -1,0 +1,1 @@
+select policyname, cmd, permissive from pg_policies where tablename in ('task_updates','task_replies');

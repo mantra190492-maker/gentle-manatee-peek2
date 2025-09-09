@@ -1,0 +1,6 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/crm/page": "app/crm/page.js",
+  "/page": "app/page.js",
+  "/qms/[module]/page": "app/qms/[module]/page.js"
+}

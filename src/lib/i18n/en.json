@@ -1,0 +1,75 @@
+{
+  "portal": {
+    "welcome": "Welcome to the Supplier Portal",
+    "description": "Please complete the following steps to onboard with us.",
+    "invalidToken": "Invalid or expired invitation link. Please contact support.",
+    "resendInvite": "Resend Invite",
+    "steps": {
+      "companyContacts": "Company & Contacts",
+      "sitesRoles": "Sites & Roles",
+      "qualityCompliance": "Quality & Compliance",
+      "productsIngredients": "Products & Ingredients",
+      "documentsUpload": "Documents Upload",
+      "legalEthics": "Legal & Ethics",
+      "reviewSubmit": "Review & Submit"
+    },
+    "buttons": {
+      "next": "Next",
+      "previous": "Previous",
+      "saveDraft": "Save Draft",
+      "submit": "Submit Application",
+      "upload": "Upload File",
+      "download": "Download"
+    },
+    "companyInfo": {
+      "title": "Company Information",
+      "legalName": "Legal Name",
+      "dba": "Doing Business As (DBA)",
+      "type": "Supplier Type",
+      "country": "Country",
+      "contactPerson": "Contact Person",
+      "contactRole": "Role",
+      "contactEmail": "Email",
+      "contactPhone": "Phone"
+    },
+    "siteInfo": {
+      "title": "Operating Sites",
+      "addSite": "Add Site",
+      "address": "Address",
+      "city": "City",
+      "region": "Region/State",
+      "gmpStatus": "GMP Status",
+      "lastAuditDate": "Last Audit Date"
+    },
+    "documentUpload": {
+      "title": "Required Documents",
+      "description": "Please upload all necessary documents. Max file size: 20MB.",
+      "issuedOn": "Issued On",
+      "expiresOn": "Expires On",
+      "status": "Status",
+      "version": "Version",
+      "uploadedBy": "Uploaded By",
+      "uploadedAt": "Uploaded At",
+      "selectFile": "Select File",
+      "dragDrop": "Drag & drop files here or click to browse",
+      "fileType": "File Type",
+      "fileName": "File Name",
+      "fileSize": "File Size"
+    },
+    "legalEthics": {
+      "title": "Legal & Ethical Compliance",
+      "codeOfConduct": "I agree to the Supplier Code of Conduct.",
+      "antiBribery": "I confirm compliance with Anti-Bribery policies.",
+      "dataProtection": "I agree to the Data Protection Agreement."
+    },
+    "reviewSubmit": {
+      "title": "Review and Submit",
+      "confirmation": "Please review all information carefully before submitting.",
+      "declaration": "I declare that all information provided is true and accurate."
+    },
+    "success": "Your application has been successfully submitted!",
+    "error": "An error occurred during submission. Please try again.",
+    "loading": "Loading...",
+    "languageToggle": "Language"
+  }
+}

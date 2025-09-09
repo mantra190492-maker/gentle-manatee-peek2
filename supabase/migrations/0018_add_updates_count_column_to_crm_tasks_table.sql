@@ -1,0 +1,2 @@
+ALTER TABLE public.crm_tasks
+ADD COLUMN updates_count INTEGER DEFAULT 0 NOT NULL;

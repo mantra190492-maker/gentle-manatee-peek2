@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-neutral-900;
+  }
+}
+
+/* Fix clipping from parent bars */
+.header, .toolbar, .filters, .sticky {
+  overflow: visible !important;              /* don’t clip popper/shadow */
+}
+
+/* Optional: neutralize accidental glass/backdrop on ancestors */
+*[style*="backdrop-filter"], .glass, .frosted {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Keep calendar/popover fully visible and crisp */
+[data-radix-popper-content-wrapper] {
+  z-index: 80 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  opacity: 1 !important;
+}
+
+/* React Day Picker / shadcn Calendar alignment */
+.rdp {
+  width: 100%;
+  @apply p-2; /* Add padding to the calendar itself */
+}
+.rdp-month {
+  width: 100%;
+}
+/* Removed border-collapse and border-spacing as rdp-table is not a true table */
+.rdp-table {
+  width: 100%;
+}
+
+/* The row itself is the grid container for cells */
+.rdp-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+}
+
+/* Head wrapper should not be a grid itself, but its child rdp-row is */
+.rdp-head {
+  margin-bottom: .25rem;
+}
+/* Tbody wrapper should not be a grid itself, its children rdp-row are */
+.rdp-tbody {
+  /* no specific display needed here */
+}
+
+/* cells - ensure content is centered within each grid cell */
+.rdp-head_cell, .rdp-cell {
+  display: flex; /* Use flex to center content */
+  justify-content: center;
+  align-items: center;
+  padding: .25rem 0;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-feature-settings: "tnum";
+          font-feature-settings: "tnum";
+}
+
+/* day buttons aligned and same size */
+.rdp-day {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;  /* keep square buttons */
+  height: 2rem;
+  /* margin: 0 auto; -- removed, as flex on parent cell handles centering */
+  border-radius: .5rem;
+  box-sizing: border-box; /* Ensure padding/border don't expand size */
+  @apply text-sm; /* Consistent text size */
+}
+
+/* remove any stray spacing that pushes columns */
+.rdp-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .25rem .5rem;
+}
+.rdp-caption_label { /* Ensure month/year text is centered within its space */
+  flex-grow: 1;
+  text-align: center;
+}
+.rdp-nav { /* Ensure navigation buttons are positioned correctly */
+  display: flex;
+  gap: 0.5rem;
+}
+.rdp-nav_button {
+  @apply h-7 w-7 inline-flex items-center justify-center rounded-md hover:bg-gray-100 text-gray-700;
+}
+
+.rdp-weeknumber, .rdp-weeknumber_cell { display:none; } /* if week numbers enabled */
+
+/* React Datepicker custom styling for consistency */
+.react-datepicker-popper {
+  z-index: 90 !important; /* Ensure it's above other elements */
+}
+
+.react-datepicker {
+  @apply font-sans rounded-xl border border-gray-200 bg-white shadow-xl text-gray-900;
+  padding: 0.5rem;
+}
+
+.react-datepicker__header {
+  @apply bg-white border-b border-gray-200 pt-2 px-2;
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+  @apply text-base font-semibold text-gray-900 mb-2;
+}
+
+.react-datepicker__navigation {
+  @apply top-3;
+}
+
+.react-datepicker__navigation--previous {
+  @apply left-2;
+}
+
+.react-datepicker__navigation--next {
+  @apply right-2;
+}
+
+.react-datepicker__navigation-icon::before {
+  @apply border-gray-500;
+}
+
+.react-datepicker__month {
+  @apply pt-2;
+}
+
+.react-datepicker__week {
+  @apply flex;
+}
+
+.react-datepicker__day-names {
+  @apply flex justify-around mb-1;
+}
+
+.react-datepicker__day-name {
+  @apply text-xs font-medium text-gray-500 w-8;
+}
+
+.react-datepicker__day {
+  @apply w-8 h-8 flex items-center justify-center rounded-lg text-sm;
+  margin: 0.125rem;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  @apply bg-emerald-600 text-white;
+}
+
+.react-datepicker__day--today {
+  @apply ring-1 ring-emerald-500;
+}
+
+.react-datepicker__day--outside-month {
+  @apply text-gray-400 opacity-60;
+}
+
+.react-datepicker__day:hover {
+  @apply bg-gray-100;
+}
+
+.react-datepicker__day--selected:hover,
+.react-datepicker__day--keyboard-selected:hover {
+  @apply bg-emerald-700;
+}
+
+/* Custom input styling for consistency */
+/* Removed .custom-input-style as it's being replaced by direct application of Tailwind classes */
